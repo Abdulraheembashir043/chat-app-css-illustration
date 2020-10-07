@@ -1,3 +1,4 @@
+// ########## Default ##########
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
+  background: hsl(270, 20%, 96%);
 }
 header, section, main, footer {
   display: block;
@@ -12,7 +14,6 @@ header, section, main, footer {
 
 // ########## Mobile View ##########
 .wrapper {
-  background: hsl(270, 20%, 96%);
   position: relative;
 
   .bg {
@@ -29,15 +30,14 @@ header, section, main, footer {
     position: absolute;
     top: 10%;
     left: 15%;
-    // border: 1px solid red;
     width: 250px;
     padding: 10px;
     border-radius: 30px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 100px -40px hsl(271, 15%, 43%);;
 
     .app-inner {
       background: hsl(270, 20%, 96%);
-      // border: 1px solid blue;
       border-radius: 30px;
       padding-bottom: 1px;
 
@@ -127,6 +127,7 @@ header, section, main, footer {
             width: 40px;
             border-radius: 10px;
           }
+
         }
 
         .second-right, .third-right {
@@ -150,6 +151,7 @@ header, section, main, footer {
           p {
             text-align: center;
           }
+
         }
 
         .fourth-left, .fifth-left {
@@ -171,7 +173,6 @@ header, section, main, footer {
             border-radius: 50%;
           }
 
-
           p {
 
             &:nth-of-type(1) {
@@ -183,7 +184,9 @@ header, section, main, footer {
             &:nth-of-type(2) {
               font-weight: bold;
             }
+
           }
+
         }
 
         .fourth-left {
@@ -196,6 +199,7 @@ header, section, main, footer {
 
           input {
             background: hsl(0, 0%, 100%);
+            color: hsl(206, 6%, 79%);
             width: 100%;
             padding: 10px;
             border: 0;
@@ -217,10 +221,64 @@ header, section, main, footer {
               color: hsl(0, 0%, 100%);
               margin-top: 4px;
             }
+
           }
+
         }
 
       } // End of main
+
+    } // End of .app-inner
+
+  } // End of .app
+
+  section {
+    margin: 200px 0 0;
+    text-align: center;
+
+    h1 {
+      color: hsl(271, 36%, 24%);
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
-  }
+
+    p {
+      color: hsl(270, 7%, 64%);
+      line-height: 1.7;
+      width: 300px;
+      margin: 0 auto;
+    }
+
+  } // End of section
+
+  footer {
+    font-size: .75em;
+    margin: 100px 0 10px;
+    text-align: center;
+    color: hsl(293, 100%, 63%);
+
+    #fspan {
+      padding-right: 10px;
+      border-right: 2px solid hsl(264, 100%, 61%);
+    }
+
+    #sspan {
+      padding-left: 10px;
+      border-left: 2px solid hsl(293, 100%, 63%);
+    }
+
+    a {
+      color: hsl(264, 100%, 61%);
+      text-decoration: underline;
+      text-decoration-color: hsl(271, 36%, 24%);
+
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+  } // End of footer
+
 } // End of .wrapper
