@@ -17,7 +17,7 @@ header, section, main, footer {
   position: relative;
 
   .bg {
-    height: 600px;
+    height: 550px;
     width: 50%;
     background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     background-size: cover;
@@ -27,7 +27,7 @@ header, section, main, footer {
   .app {
     background: hsl(0, 0%, 100%);
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 15%;
     width: 250px;
     padding: 10px;
@@ -317,5 +317,5 @@ header, section, main, footer {
     }
 
   } // End of wrapper
-  
+
 } // End of Media Query

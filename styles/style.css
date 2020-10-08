@@ -19,7 +19,7 @@ header, section, main, footer {
 }
 
 .wrapper .bg {
-  height: 600px;
+  height: 550px;
   width: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(#8838ff), to(#e942ff));
   background: linear-gradient(to top, #8838ff, #e942ff);
@@ -30,7 +30,7 @@ header, section, main, footer {
 .wrapper .app {
   background: white;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 15%;
   width: 250px;
   padding: 10px;
