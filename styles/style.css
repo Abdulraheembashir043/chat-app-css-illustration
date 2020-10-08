@@ -19,12 +19,12 @@ header, section, main, footer {
 }
 
 .wrapper .bg {
-  height: 350px;
+  height: 600px;
   width: 50%;
-  background: #8838ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(to top, #8838ff, #e942ff);
   background-size: cover;
-  border-radius: 0 0 100% 0;
-  padding-bottom: 200px;
+  border-bottom-right-radius: 500px 900px;
 }
 
 .wrapper .app {
@@ -273,5 +273,33 @@ header, section, main, footer {
 
 .wrapper footer a:hover {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper .bg {
+    background: -webkit-gradient(linear, left bottom, left top, from(#8838ff), to(#e942ff));
+    background: linear-gradient(to top, #8838ff, #e942ff);
+    height: 725px;
+    width: 30%;
+    border-bottom-left-radius: 1900px 550px;
+    border-bottom-right-radius: 3000px 3900px;
+  }
+  .wrapper .app {
+    top: 10%;
+    left: 25%;
+  }
+  .wrapper section {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    text-align: left;
+    width: 430px;
+  }
+  .wrapper section p {
+    width: 100%;
+  }
+  .wrapper footer {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
